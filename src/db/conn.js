@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://localhost:27017/youtubeRegistration').then(()=>{
+mongoose.connect(process.env.DB_NAME).then(()=>{
     console.log('Connection successfull')
 
 
